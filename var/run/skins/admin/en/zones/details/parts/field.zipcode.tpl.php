@@ -1,0 +1,1 @@
+<?php $this->getWidget(array('value' => $this->get('zone')->getZoneZipCodes(1), 'label' => 'Zip/postal code masks', 'rows' => '5', 'cols' => '70', 'fieldName' => 'zone_zipcodes', 'help' => $this->t('Zone zipcode masks help')), '\XLite\View\FormField\Textarea\Simple')->display(); ?>

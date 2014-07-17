@@ -1,0 +1,1 @@
+<td><input type="checkbox" class="checkbox <?php echo func_htmlspecialchars($this->get('product')->getProductId()); ?>" value="1" name="<?php echo func_htmlspecialchars($this->getNameToDelete($this->get('product')->getProductId())); ?>" /></td>

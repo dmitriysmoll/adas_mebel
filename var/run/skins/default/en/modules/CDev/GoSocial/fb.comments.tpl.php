@@ -1,0 +1,2 @@
+<?php $this->getWidget(array(), '\XLite\Module\CDev\GoSocial\View\ExternalSDK\Facebook')->display(); ?>
+<div class="fb-comments"<?php $_foreach_var = $this->getAttributes(); if (isset($_foreach_var)) { $this->vArraySize=count($_foreach_var); $this->vArrayPointer=0; } if (isset($_foreach_var)) foreach ($_foreach_var as $this->k => $this->v){ $this->vArrayPointer++; ?> data-<?php echo func_htmlspecialchars($this->get('k')); ?>="<?php echo func_htmlspecialchars($this->get('v')); ?>"<?php }?>></div>

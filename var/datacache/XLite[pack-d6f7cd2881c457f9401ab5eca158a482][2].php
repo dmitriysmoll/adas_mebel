@@ -1,0 +1,1 @@
+<?php die(); ?>          0a:1:{i:0;a:4:{s:5:"items";a:1:{i:0;a:6:{s:8:"subtotal";d:9900;s:5:"price";d:9900;s:6:"weight";i:0;s:3:"qty";i:1;s:2:"id";i:57;s:4:"name";s:48:"Стул Олива-3 (комплект 4 шт.)";}}s:8:"subtotal";d:9900;s:6:"weight";i:0;s:3:"box";a:4:{s:6:"weight";d:31.5;s:6:"height";i:0;s:5:"width";i:0;s:6:"length";i:0;}}}

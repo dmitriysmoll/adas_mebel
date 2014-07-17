@@ -1,0 +1,1 @@
+<div class="shipping order-status-<?php echo func_htmlspecialchars($this->get('order')->getShippingStatusCode()); ?>"><?php $this->getWidget(array('order' => $this->getOrder(), 'useWrapper' => 'true'), '\XLite\View\OrderStatus\Shipping')->display(); ?></div>

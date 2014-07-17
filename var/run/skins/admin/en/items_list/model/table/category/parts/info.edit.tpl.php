@@ -1,0 +1,1 @@
+<a href="<?php echo func_htmlspecialchars($this->buildURL('category','',array('id'=>$this->get('entity')->getCategoryId()))); ?>" class="edit"><?php echo func_htmlspecialchars($this->t('Edit')); ?></a>

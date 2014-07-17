@@ -1,0 +1,1 @@
+<div class="item-price"><?php $this->getWidget(array('surcharge' => $this->get('item')->getNetPrice(), 'currency' => $this->get('cart')->getCurrency()), 'XLite\View\Surcharge')->display(); ?> &times; <?php echo func_htmlspecialchars($this->get('item')->getAmount()); ?></div>

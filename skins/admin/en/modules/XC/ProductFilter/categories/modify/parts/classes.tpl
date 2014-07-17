@@ -1,0 +1,23 @@
+{* vim: set ts=2 sw=2 sts=2 et: *}
+
+{**
+ * Category classes
+ *
+ * @author    Qualiteam software Ltd <info@x-cart.com>
+ * @copyright Copyright (c) 2011-2013 Qualiteam software Ltd <info@x-cart.com>. All rights reserved
+ * @license   http://www.x-cart.com/license-agreement.html X-Cart 5 License Agreement
+ * @link      http://www.x-cart.com/
+ *
+ * @ListChild (list="category.modify.list", weight="1110")
+ *}
+
+<tr class="product-classes">
+  <td colspan="2"></td>
+  <td>
+    <widget
+      class="\XLite\Module\XC\ProductFilter\View\FormField\Select\Classes"
+      fieldName="{getNamePostedData(#classes#)}"
+      fieldOnly=true
+      value="{category.getClasses()}" />
+  </td>
+</tr>

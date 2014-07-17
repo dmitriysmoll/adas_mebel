@@ -1,0 +1,1 @@
+<a href="<?php echo func_htmlspecialchars($this->buildURL('categories','',array('id'=>$this->get('entity')->getCategoryId()))); ?>" class="count-link"><?php echo func_htmlspecialchars($this->get('entity')->getSubcategoriesCount()); ?></a>

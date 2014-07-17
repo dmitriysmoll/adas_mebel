@@ -1,0 +1,1 @@
+<td><input type="text" class="price" size="10" value="<?php echo str_replace('"', '&quot;',$this->get('product')->getPrice()); ?>" name="<?php echo func_htmlspecialchars($this->getNamePostedData('price',$this->get('product')->getProductId())); ?>" /></td>

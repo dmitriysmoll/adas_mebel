@@ -1,0 +1,53 @@
+#
+# robots.txt
+#
+
+User-agent: *
+Crawl-delay: 10
+# Directories
+Disallow: /Includes/
+Disallow: /classes/
+Disallow: /etc/
+Disallow: /files/
+Disallow: /lib/
+Disallow: /skins/
+Disallow: /sql/
+Disallow: /upgrade/
+Disallow: /var/
+
+# Files
+Disallow: /admin.php
+Disallow: /console.php
+Disallow: /error_handler.php
+Disallow: /https_check.php
+Disallow: /install.php
+Disallow: /LICENSE.txt
+Disallow: /probe.php
+Disallow: /public/error.css
+Disallow: /public/error.html
+Disallow: /public/error_image.png
+Disallow: /top.inc.PHP53.php
+Disallow: /top.inc.php
+
+# Links
+Disallow: /?target=login
+Disallow: /?target=order_list
+Disallow: /?target=profile
+Disallow: /?target=cart
+Disallow: /?target=recover_password
+Disallow: /terms-and-conditions.html
+
+#WordPress
+Disallow: /blog/wp-admin/  
+Disallow: /blog/wp-includes/  
+Disallow: /blog/wp-trackback  
+Disallow: /blog/wp-feed  
+Disallow: /blog/wp-comments  
+Disallow: /blog/wp-content/plugins  
+Disallow: /blog/wp-content/themes  
+Disallow: /blog/wp-login.php  
+Disallow: /blog/wp-register.php  
+Disallow: */blog/trackback  
+Disallow: */blog/feed  
+Disallow: /blog/cgi-bin  
+Disallow: */blog?s= 

@@ -1,0 +1,28 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Fixtures
+#
+# @author    Qualiteam software Ltd <info@x-cart.com>
+# @copyright Copyright (c) 2011-2014 Qualiteam software Ltd <info@x-cart.com>. All rights reserved
+# @license   http://www.x-cart.com/license-agreement.html X-Cart 5 License Agreement
+# @link      http://www.x-cart.com/
+
+XLite\Model\Config:
+  - name: shortname
+    category: XC\DisqusComments
+    type: 'text'
+    orderby: 100
+    value: ""
+    widgetParameters: { comment: 'Signup for Disqus now or login, if you have an account already' }
+    translations:
+      - code: en
+        option_name: Disqus shortname
+        option_comment: 'To find the Disqus Shortname, open “Site Identity”section on tab “Settings” of your Disqus Dashboard'
+      - code: ru
+        option_name: Краткое имя
+        option_comment: 'Чтобы найти краткое имя, откройте “Site Identity” в разделе “Settings” в вашем Disqus Dashboard'
+XLite\Model\LanguageLabel:
+  - { name: 'Please enable JavaScript to view the comments powered by Disqus', translations: [{ code: en, label: 'Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>' }] }
+  - { name: 'comments powered by Disqus', translations: [{ code: en, label: 'comments powered by <span class="logo-disqus">Disqus</span>' }] }
+  - { name: 'Signup for Disqus now or login, if you have an account already', translations: [{ code: en, label: ' <a href="https://disqus.com/admin/signup/?utm_source=New-Site">Signup</a> for Disqus now or <a href="https://disqus.com/profile/login">login</a>, if you have an account already.' }] }
+  - { name: 'Important: You have just enabled the "Disqus comments" module', translations: [{ code: en, label: 'Important: You have just enabled the "Disqus comments" module. Facebook comments are already enabled in your store, too. Using several comments widgets simultaneously is not recommended. To disable Facebook comments, edit the settings of the “Go Social” module.' }] }

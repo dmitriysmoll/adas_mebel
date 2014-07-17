@@ -1,0 +1,1 @@
+<th class="price"><?php $this->getWidget(array('template' => 'items_list/sort.tpl', 'title' => $this->t('Price').' <span class="currency">('.$this->getComplex('xlite.currency')->getSymbol().')</span>', 'sortByColumn' => static::SORT_BY_MODE_PRICE))->display(); ?></th>

@@ -1,0 +1,1 @@
+<?php echo func_htmlspecialchars($this->t('The module version is incompatible with your core version and cannot be enabled. Minimum core version required for this module is X.',array('version'=>$this->getNeededCoreVersion($this->get('module'))))); ?>

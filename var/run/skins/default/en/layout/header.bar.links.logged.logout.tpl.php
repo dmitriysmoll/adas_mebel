@@ -1,0 +1,1 @@
+<li class="account-link-1 last"><a href="<?php echo func_htmlspecialchars($this->buildURL('login','logoff')); ?>" rel="nofollow" class="log-in"><?php echo func_htmlspecialchars($this->t('Log out')); ?></a></li>

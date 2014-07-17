@@ -1,0 +1,1 @@
+<div class="payment order-status-<?php echo func_htmlspecialchars($this->get('order')->getPaymentStatusCode()); ?>"><?php $this->getWidget(array('order' => $this->getOrder(), 'useWrapper' => 'true'), '\XLite\View\OrderStatus\Payment')->display(); ?></div>

@@ -1,0 +1,1 @@
+<?php $this->getWidget(array('fieldName' => 'zone_countries', 'label' => 'Countries', 'labelFrom' => 'All countries', 'labelTo' => 'Selected countries', 'value' => $this->get('zone')->getZoneCountries(), 'wrapperClass' => 'zone-countries'), '\XLite\View\FormField\Listbox\Country')->display(); ?>

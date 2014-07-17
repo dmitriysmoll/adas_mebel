@@ -1,0 +1,1 @@
+<input type="email" name="email" placeholder="<?php echo func_htmlspecialchars($this->t('Enter your e-mail')); ?>" value="<?php echo func_htmlspecialchars($this->getComplex('cart.profile.login')); ?>" class="field-required field-email progress-mark-owner watcher" />

@@ -1,0 +1,1 @@
+<td><input type="text" class="pos" size="5" name="<?php echo func_htmlspecialchars($this->getNamePostedData('pos',$this->get('product')->getProductId())); ?>" value="<?php echo str_replace('"', '&quot;',$this->get('product')->getOrderBy()); ?>" /></td>

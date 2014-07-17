@@ -1,0 +1,1 @@
+<?php if ($this->getTarget()=='addons_list_marketplace'||$this->getTarget()=='addons_list_installed'): ?><a  href="http://www.x-cart.com/module-marketplace-terms-of-use.html?sl=<?php echo func_htmlspecialchars(XLite::getInstallationLng()); ?>" target="_blank"><?php echo func_htmlspecialchars($this->t('Module Marketplace. Terms of use')); ?></a><?php endif; ?>

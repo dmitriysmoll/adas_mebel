@@ -1,0 +1,1 @@
+<a class="<?php echo func_htmlspecialchars($this->getItemClass($this->get('entry'))); ?>" title="<?php echo func_htmlspecialchars($this->getComplex('entry.fullName')); ?>"><img src="skins/default/en/images/spacer.gif" alt="<?php echo func_htmlspecialchars($this->getComplex('entry.type')); ?>" /><span><?php echo func_htmlspecialchars($this->getComplex('entry.name')); ?></span></a>

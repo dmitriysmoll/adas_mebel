@@ -1,0 +1,1 @@
+<td><a class="name" href="<?php echo func_htmlspecialchars($this->buildURL('product','',array('product_id'=>$this->get('product')->getProductId()))); ?>"><?php if ($this->get('product')->getName()){?><?php echo $this->get('product')->getName(); ?><?php }else{ ?>N/A<?php }?></a></td>

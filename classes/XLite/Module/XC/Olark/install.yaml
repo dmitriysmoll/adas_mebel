@@ -1,0 +1,23 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Fixtures
+#
+# @author    Qualiteam software Ltd <info@x-cart.com>
+# @copyright Copyright (c) 2011-2013 Qualiteam software Ltd <info@x-cart.com>. All rights reserved
+# @license   http://www.x-cart.com/license-agreement.html X-Cart 5 License Agreement
+# @link      http://www.x-cart.com/
+
+XLite\Model\Config:
+  - name: siteId
+    category: XC\Olark
+    type: 'text'
+    orderby: 100
+    value: ""
+    translations:
+      - code: en
+        option_name: Site ID
+        option_comment: 'You can find the “site ID” <a href="https://www.olark.com/settings/code">here</a>, on your Olark dashboard. Check the lower box on the “Installation” tab of the “Settings” page.'
+XLite\Model\LanguageLabel:
+  - { name: 'cart is empty', translations: [{ code: en, label: 'cart is empty' }] }
+  - { name: 'cart has X items; subtotal: Y', translations: [{ code: en, label: 'cart has {{items}} items; subtotal: {{subtotal}}' }] }
+  - { name: 'Signup for Olark now or login, if you have an account already.', translations: [{ code: en, label: '<a href="https://www.olark.com/signup/create_new_account?r=fma4ik60">Signup</a> for Olark now or <a href="https://www.olark.com/login?r=fma4ik60">login</a>, if you have an account already.' }] }

@@ -1,0 +1,1 @@
+<td><a class="category" href="<?php echo func_htmlspecialchars($this->buildURL('category','',array('category_id'=>$this->getComplex('product.category')->getCategoryId()))); ?>"><?php echo func_htmlspecialchars($this->getComplex('product.category')->getName()); ?></a></td>

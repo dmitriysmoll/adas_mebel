@@ -1,0 +1,2 @@
+<?php if ($this->get('item')->hasImage()): ?><td class="item-thumbnail" ><a href="<?php echo func_htmlspecialchars($this->get('item')->getURL()); ?>"><?php $this->getWidget(array('image' => $this->get('item')->getImage(), 'alt' => $this->get('item')->getName(), 'maxWidth' => '80', 'maxHeight' => '80', 'centerImage' => '0'), '\XLite\View\Image')->display(); ?></a></td><?php endif; ?>
+<?php if (!($this->get('item')->hasImage())): ?><td class="item-thumbnail" >&nbsp;</td><?php endif; ?>
