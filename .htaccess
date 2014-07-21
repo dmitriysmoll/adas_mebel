@@ -7,6 +7,11 @@
 # @license   http://www.x-cart.com/license-agreement.html X-Cart 5 License Agreement
 # @link      http://www.x-cart.com/
 
+AuthName "Danger zone"
+AuthType Basic  
+Require valid-user
+AuthUserFile "/home/users1/d/dmitriysmoll/domains/test.adas-mebel.ru/.htpasswd"
+
 Options -Indexes
 DirectoryIndex cart.php
 FileETag none

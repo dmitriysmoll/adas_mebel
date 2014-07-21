@@ -3629,3 +3629,7 @@ form div.table-value.xcart-form-id-value {
 {
   color: #8f8f8f;
 }
+
+/*----costum style---------*/
+DIV.shipping-info-product {display:none; float:left;}
+DIV.shipping-info-product SPAN {padding:8px 10px; background:#e14285;}
