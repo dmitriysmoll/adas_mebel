@@ -14,10 +14,3 @@
 <div class="product-details-info">
   <list name="product.details.page.info" />
 </div>
-
-<!--
-<div class="shipping-info-product">
-	<span>Доставка. Подъем. Сборка</span>
-	<h4>Бесплатно доставим</h4>
-</div>
--->

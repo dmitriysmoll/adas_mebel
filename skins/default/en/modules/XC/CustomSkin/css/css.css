@@ -1,0 +1,32 @@
+/*
+.checkout-block .steps ul.form li.item-country_code 
+{
+	display:none;
+}
+*/
+
+DIV.product-details-shipping_payment-info
+{
+	float: left;
+	width:270px;
+	margin-left: 20px;
+	padding-bottom:20px;
+}
+
+DIV.product-details-shipping_payment-info SPAN
+{
+	display:block;
+	font-size:20px;
+	font-weight:bold;
+	padding-bottom:5px;
+}
+DIV.product-details-shipping_payment-info UL
+{
+	list-style-type:disc;
+}
+/*
+DIV.product-details-shipping_payment-info UL LI
+{
+	margin-left:10px;
+}
+*/
