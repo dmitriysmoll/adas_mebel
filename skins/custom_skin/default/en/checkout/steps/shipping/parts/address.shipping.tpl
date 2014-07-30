@@ -1,4 +1,4 @@
-{* vim: set ts=2 sw=2 sts=2 et: *}
+﻿{* vim: set ts=2 sw=2 sts=2 et: *}
 
 {**
  * Checkout shipping address form
@@ -9,9 +9,9 @@
  * @link      http://www.x-cart.com/
  *}
 <widget class="\XLite\View\Form\Checkout\UpdateProfile" name="shippingAddress" className="address shipping-address" />
-  <input type="hidden" name="shippingAddress[country_code]" value="RU"/>
+  
   <ul class="form shipping-address-form">
-    <li FOREACH="getAddressFields(),fieldName,fieldData" class="item-{fieldName} {fieldData.additionalClass} clearfix">
+    <li FOREACH="getAddressFields(),fieldName,fieldData" class="item-{fieldName} {fieldData.additionalClass} ">
       <widget
         class="{fieldData.class}"
         attributes="{getFieldAttributes(fieldName,fieldData)}"
@@ -26,7 +26,16 @@
         required="{fieldData.required}" />
       <list name="checkout.shipping.address.{fieldName}" address="{getAddressInfo()}" fieldName="{fieldName}" fieldData="{fieldData}" />
     </li>
-    <list name="checkout.shipping.address" address="{getAddressInfo()}" />
+	<list name="checkout.shipping.address" address="{getAddressInfo()}" />
   </ul>
 <widget name="shippingAddress" end />
 
+<div class="shipping-help-info">
+	<span>Не нашли свой город в списке?</span>
+	<ul>
+	<li>1. Выбирете для доставки город Воронеж</li>
+	<li>2. В поле "Замечания к заказу" укажите необходимый вам город, и наши менеджеры рассчитают стоимость доставки</li>
+	<li>3. Либо напишите нам, используя форму снизу справа или через страницу <a rel="nofollow" target="_blank" href="http://adas-mebel.ru/?target=contact_us">Напишите нам</a></li>
+	<li><strong>Мы обязательно найдем оптимальное решение для доставки вашей мебели.</strong>
+	</ul>
+</div>

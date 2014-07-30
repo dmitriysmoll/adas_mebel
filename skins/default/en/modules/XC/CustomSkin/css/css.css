@@ -1,32 +1,10 @@
-/*
-.checkout-block .steps ul.form li.item-country_code 
-{
-	display:none;
-}
-*/
+﻿/*Блок Доставка в карточке товара*/
+DIV.product-details-shipping_payment-info {float: left; width:270px; margin-left: 20px; padding-bottom:20px;}
 
-DIV.product-details-shipping_payment-info
-{
-	float: left;
-	width:270px;
-	margin-left: 20px;
-	padding-bottom:20px;
-}
+DIV.product-details-shipping_payment-info SPAN {display:block; font-size:20px; font-weight:bold;	padding-bottom:5px;}
+DIV.product-details-shipping_payment-info UL {list-style-type:disc;}
 
-DIV.product-details-shipping_payment-info SPAN
-{
-	display:block;
-	font-size:20px;
-	font-weight:bold;
-	padding-bottom:5px;
-}
-DIV.product-details-shipping_payment-info UL
-{
-	list-style-type:disc;
-}
-/*
-DIV.product-details-shipping_payment-info UL LI
-{
-	margin-left:10px;
-}
-*/
+/*Блок Не нашли город? при оформлении заказа*/
+DIV.shipping-help-info {clear:both; padding:10px; background:#f6f6f6;}
+DIV.shipping-help-info  SPAN {display:block; font-size:20px; font-weight:bold; padding-bottom:10px;}
+DIV.shipping-help-info  UL LI {padding-bottom:5px;}
