@@ -10,7 +10,7 @@
  *}
 
 --<br />
-<div>{t(#Thank you for using company services#,_ARRAY_(#company#^config.Company.company_name))}</div>
+<div>{t(#Спасибо что выбрали нас!#,_ARRAY_(#company#^config.Company.company_name))}</div>
 
 <br />
 

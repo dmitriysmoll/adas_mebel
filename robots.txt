@@ -3,7 +3,13 @@
 #
 
 User-agent: *
-Crawl-delay: 10
+
+#For sitemap Generator
+Disallow: *?pageId
+
+Disallow: *?displayMode
+Disallow: *?sortBy
+
 # Directories
 Disallow: /Includes/
 Disallow: /classes/
@@ -36,6 +42,7 @@ Disallow: /?target=profile
 Disallow: /?target=cart
 Disallow: /?target=recover_password
 Disallow: /terms-and-conditions.html
+Disallow: /?target=main
 
 #WordPress
 Disallow: /blog/wp-admin/  

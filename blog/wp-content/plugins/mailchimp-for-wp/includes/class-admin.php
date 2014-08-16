@@ -17,24 +17,43 @@ class MC4WP_Lite_Admin
 	/**
 	 * @var string The relative path to the main plugin file from the plugins dir
 	 */
-	private $plugin_file = '';
+	private $plugin_file = 'mailchimp-for-wp/mailchimp-for-wp.php';
 
 	public function __construct()
 	{
-		$this->plugin_file = plugin_basename( MC4WP_LITE_PLUGIN_FILE );
-
-		add_action( 'admin_init', array( $this, 'initialize' ) );
-		add_action( 'admin_menu', array( $this, 'build_menu' ) );
-		add_action( 'admin_enqueue_scripts', array( $this, 'load_css_and_js' ) );
-
-		add_filter( 'plugin_action_links', array( $this, 'add_plugin_settings_link' ), 10, 2 );
-		add_filter( 'plugin_row_meta', array( $this, 'add_plugin_meta_links'), 10, 2 );
-		add_filter( 'quicktags_settings', array( $this, 'set_quicktags_buttons' ), 10, 2 );
+		$this->setup_hooks();
 
 		// did the user click on upgrade to pro link?
 		if( isset( $_GET['page'] ) && $_GET['page'] === 'mc4wp-lite-upgrade' && false === headers_sent() ) {
 			header("Location: https://dannyvankooten.com/mailchimp-for-wordpress/#utm_source=lite-plugin&utm_medium=link&utm_campaign=menu-upgrade-link");
 			exit;
+		}
+
+	}
+
+	/**
+	 * Registers all hooks
+	 */
+	private function setup_hooks() {
+
+		global $pagenow;
+
+		// Actions used throughout WP Admin
+		add_action( 'admin_init', array( $this, 'initialize' ) );
+		add_action( 'admin_menu', array( $this, 'build_menu' ) );
+		add_action( 'admin_enqueue_scripts', array( $this, 'load_css_and_js' ) );
+
+		// Hooks for Plugins overview
+		if( isset( $pagenow ) && $pagenow === 'plugins.php' ) {
+			$this->plugin_file = plugin_basename( MC4WP_LITE_PLUGIN_FILE );
+
+			add_filter( 'plugin_action_links_' . $this->plugin_file, array( $this, 'add_plugin_settings_link' ), 10, 2 );
+			add_filter( 'plugin_row_meta', array( $this, 'add_plugin_meta_links'), 10, 2 );
+		}
+
+		// Hooks for Form settings page
+		if( isset( $_GET['page'] ) && $_GET['page'] === 'mc4wp-lite-form-settings' ) {
+			add_filter( 'quicktags_settings', array( $this, 'set_quicktags_buttons' ), 10, 2 );
 		}
 
 	}
@@ -168,13 +187,15 @@ class MC4WP_Lite_Admin
 		if( false === isset( $_GET['page'] ) || false === stristr( $_GET['page'], 'mc4wp-lite' ) ) {
 			return; 
 		}
-		
+
+		$suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
+
 		// css
-		wp_enqueue_style( 'mc4wp-admin-css', MC4WP_LITE_PLUGIN_URL . 'assets/css/admin.css' );
+		wp_enqueue_style( 'mc4wp-admin-css', MC4WP_LITE_PLUGIN_URL . 'assets/css/admin' . $suffix . '.css' );
 
 		// js
-		wp_register_script( 'mc4wp-beautifyhtml', MC4WP_LITE_PLUGIN_URL . 'assets/js/beautify-html.js', array( 'jquery' ), MC4WP_LITE_VERSION, true );
-		wp_register_script( 'mc4wp-admin', MC4WP_LITE_PLUGIN_URL . 'assets/js/admin.js', array( 'jquery' ), MC4WP_LITE_VERSION, true );
+		wp_register_script( 'mc4wp-beautifyhtml', MC4WP_LITE_PLUGIN_URL . 'assets/js/beautify-html'. $suffix .'.js', array( 'jquery' ), MC4WP_LITE_VERSION, true );
+		wp_register_script( 'mc4wp-admin', MC4WP_LITE_PLUGIN_URL . 'assets/js/admin' . $suffix . '.js', array( 'jquery', 'quicktags' ), MC4WP_LITE_VERSION, true );
 		wp_enqueue_script( array( 'jquery', 'mc4wp-beautifyhtml', 'mc4wp-admin' ) );
 		wp_localize_script( 'mc4wp-admin', 'mc4wp',
 			array(

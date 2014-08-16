@@ -98,7 +98,7 @@ abstract class MC4WP_Integration {
 		 	
 		}
 
-		$content = "\n<!-- MailChimp for WP v". MC4WP_LITE_VERSION ." - https://dannyvankooten.com/mailchimp-for-wordpress/ -->\n";
+		$content = "<!-- MailChimp for WP v". MC4WP_LITE_VERSION ." - https://dannyvankooten.com/mailchimp-for-wordpress/ -->";
 
 		do_action( 'mc4wp_before_checkbox' ); 
 
@@ -182,6 +182,11 @@ abstract class MC4WP_Integration {
 			} else {
 				$merge_vars['FNAME'] = $merge_vars['NAME'];
 			}
+		}
+
+		// set ip address
+		if( ! isset( $merge_vars['OPTIN_IP'] ) && isset( $_SERVER['REMOTE_ADDR'] ) ) {
+			$merge_vars['OPTIN_IP'] = $_SERVER['REMOTE_ADDR'];
 		}
 
 		$result = false;

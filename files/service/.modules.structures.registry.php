@@ -49,11 +49,17 @@ CDev\TinyMCE:
   tables: {  }
   columns: {  }
 CDev\SimpleCMS:
-  tables: [page_translations, page_images, menu_translations, pages, menus]
+  tables: [page_translations, page_images, menu_translations, menus, pages]
   columns: {  }
 CDev\RuTranslation:
   tables: {  }
   columns: {  }
 CDev\XMLSitemap:
+  tables: {  }
+  columns: {  }
+XC\CustomSkin:
+  tables: {  }
+  columns: {  }
+XC\WebmasterKit:
   tables: {  }
   columns: {  }

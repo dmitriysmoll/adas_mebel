@@ -32,7 +32,7 @@ namespace XLite\Module\XC\ThemeTweaker\View;
 /**
  * Abstract widget
  */
-abstract class AView extends \XLite\Module\XC\ColorSchemes\View\AView implements \XLite\Base\IDecorator
+abstract class AView extends \XLite\Module\XC\CustomSkin\View\AView implements \XLite\Base\IDecorator
 {
     /**
      * Get list of methods, priorities and interfaces for the resources

@@ -324,3 +324,224 @@
 [info, Jul 15 2014 23:43:44] Marketplace [check_for_updates]: получен верный ответ
 [info, Jul 17 2014 00:30:24] Marketplace [check_for_updates]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_for_updates"
 [info, Jul 17 2014 00:30:26] Marketplace [check_for_updates]: получен верный ответ
+[info, Jul 25 2014 16:42:22] Marketplace [check_for_updates]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_for_updates"
+[info, Jul 25 2014 16:42:24] Marketplace [check_for_updates]: получен верный ответ
+[info, Jul 25 2014 17:17:17] Marketplace [get_addons]: the "https://my.x-cart.com/index.php?q=api/get_addons" URL requested
+[info, Jul 25 2014 17:17:20] Marketplace [get_addons]: valid response received
+[info, Jul 25 2014 17:17:23] Marketplace [get_cores]: the "https://my.x-cart.com/index.php?q=api/get_cores" URL requested
+[info, Jul 25 2014 17:17:24] Marketplace [get_cores]: valid response received
+[info, Jul 25 2014 17:18:27] Marketplace [get_core_pack]: the "https://my.x-cart.com/index.php?q=api/get_core_pack" URL requested
+[info, Jul 25 2014 17:18:33] Core pack (v.5.1.4) is received: "/home/users1/d/dmitriysmoll/domains/adas-mebel.ru/var/tmp/53d2592964ef3.gz"
+[info, Jul 25 2014 17:18:33] Marketplace [get_core_hash]: the "https://my.x-cart.com/index.php?q=api/get_core_hash" URL requested
+[info, Jul 25 2014 17:18:35] Marketplace [get_core_hash]: valid response received
+[info, Jul 25 2014 17:18:35] Marketplace [get_addon_pack]: the "https://my.x-cart.com/index.php?q=api/get_addon_pack" URL requested
+[info, Jul 25 2014 17:18:37] Module pack ("XC\Add2CartPopup") is received: "/home/users1/d/dmitriysmoll/domains/adas-mebel.ru/var/tmp/53d2592d15d8b.gz"
+[info, Jul 25 2014 17:18:37] Marketplace [get_addon_hash]: the "https://my.x-cart.com/index.php?q=api/get_addon_hash" URL requested
+[info, Jul 25 2014 17:18:38] Marketplace [get_addon_hash]: valid response received
+[info, Jul 25 2014 17:18:38] Marketplace [get_addon_pack]: the "https://my.x-cart.com/index.php?q=api/get_addon_pack" URL requested
+[info, Jul 25 2014 17:18:40] Module pack ("XC\ColorSchemes") is received: "/home/users1/d/dmitriysmoll/domains/adas-mebel.ru/var/tmp/53d2593051e13.gz"
+[info, Jul 25 2014 17:18:40] Marketplace [get_addon_hash]: the "https://my.x-cart.com/index.php?q=api/get_addon_hash" URL requested
+[info, Jul 25 2014 17:18:41] Marketplace [get_addon_hash]: valid response received
+[info, Jul 25 2014 17:18:41] Marketplace [get_addon_pack]: the "https://my.x-cart.com/index.php?q=api/get_addon_pack" URL requested
+[info, Jul 25 2014 17:18:42] Module pack ("CDev\ContactUs") is received: "/home/users1/d/dmitriysmoll/domains/adas-mebel.ru/var/tmp/53d25932c2afa.gz"
+[info, Jul 25 2014 17:18:42] Marketplace [get_addon_hash]: the "https://my.x-cart.com/index.php?q=api/get_addon_hash" URL requested
+[info, Jul 25 2014 17:18:43] Marketplace [get_addon_hash]: valid response received
+[info, Jul 25 2014 17:18:43] Marketplace [get_addon_pack]: the "https://my.x-cart.com/index.php?q=api/get_addon_pack" URL requested
+[error, Jul 25 2014 17:18:44] Marketplace [get_addon_pack]: error code (1027): No valid X-Cart license for this module
+[info, Jul 25 2014 17:18:44] Marketplace [get_addon_pack]: the "https://my.x-cart.com/index.php?q=api/get_addon_pack" URL requested
+[info, Jul 25 2014 17:18:46] Module pack ("CDev\GoogleAnalytics") is received: "/home/users1/d/dmitriysmoll/domains/adas-mebel.ru/var/tmp/53d259361881b.gz"
+[info, Jul 25 2014 17:18:46] Marketplace [get_addon_hash]: the "https://my.x-cart.com/index.php?q=api/get_addon_hash" URL requested
+[info, Jul 25 2014 17:18:47] Marketplace [get_addon_hash]: valid response received
+[info, Jul 25 2014 17:18:47] Marketplace [get_addon_pack]: the "https://my.x-cart.com/index.php?q=api/get_addon_pack" URL requested
+[info, Jul 25 2014 17:18:48] Module pack ("XC\Olark") is received: "/home/users1/d/dmitriysmoll/domains/adas-mebel.ru/var/tmp/53d25938387dd.gz"
+[info, Jul 25 2014 17:18:48] Marketplace [get_addon_hash]: the "https://my.x-cart.com/index.php?q=api/get_addon_hash" URL requested
+[info, Jul 25 2014 17:18:49] Marketplace [get_addon_hash]: valid response received
+[info, Jul 25 2014 17:18:49] Marketplace [get_addon_pack]: the "https://my.x-cart.com/index.php?q=api/get_addon_pack" URL requested
+[info, Jul 25 2014 17:18:50] Module pack ("CDev\PaypalWPS") is received: "/home/users1/d/dmitriysmoll/domains/adas-mebel.ru/var/tmp/53d2593a81bb8.gz"
+[info, Jul 25 2014 17:18:50] Marketplace [get_addon_hash]: the "https://my.x-cart.com/index.php?q=api/get_addon_hash" URL requested
+[info, Jul 25 2014 17:18:51] Marketplace [get_addon_hash]: valid response received
+[info, Jul 25 2014 17:18:51] Marketplace [get_addon_pack]: the "https://my.x-cart.com/index.php?q=api/get_addon_pack" URL requested
+[error, Jul 25 2014 17:18:52] Marketplace [get_addon_pack]: error code (1027): No valid X-Cart license for this module
+[info, Jul 25 2014 17:18:52] Marketplace [get_addon_pack]: the "https://my.x-cart.com/index.php?q=api/get_addon_pack" URL requested
+[error, Jul 25 2014 17:18:53] Marketplace [get_addon_pack]: error code (1027): No valid X-Cart license for this module
+[info, Jul 25 2014 17:18:53] Marketplace [get_addon_pack]: the "https://my.x-cart.com/index.php?q=api/get_addon_pack" URL requested
+[error, Jul 25 2014 17:18:54] Marketplace [get_addon_pack]: error code (1027): No valid X-Cart license for this module
+[info, Jul 25 2014 17:18:54] Marketplace [get_addon_pack]: the "https://my.x-cart.com/index.php?q=api/get_addon_pack" URL requested
+[info, Jul 25 2014 17:18:55] Module pack ("XC\ProductVariants") is received: "/home/users1/d/dmitriysmoll/domains/adas-mebel.ru/var/tmp/53d2593fed2b5.gz"
+[info, Jul 25 2014 17:18:55] Marketplace [get_addon_hash]: the "https://my.x-cart.com/index.php?q=api/get_addon_hash" URL requested
+[info, Jul 25 2014 17:18:56] Marketplace [get_addon_hash]: valid response received
+[info, Jul 25 2014 17:18:56] Marketplace [get_addon_pack]: the "https://my.x-cart.com/index.php?q=api/get_addon_pack" URL requested
+[info, Jul 25 2014 17:18:58] Module pack ("XC\Qiwi") is received: "/home/users1/d/dmitriysmoll/domains/adas-mebel.ru/var/tmp/53d2594231e5f.gz"
+[info, Jul 25 2014 17:18:58] Marketplace [get_addon_hash]: the "https://my.x-cart.com/index.php?q=api/get_addon_hash" URL requested
+[info, Jul 25 2014 17:18:59] Marketplace [get_addon_hash]: valid response received
+[info, Jul 25 2014 17:18:59] Marketplace [get_addon_pack]: the "https://my.x-cart.com/index.php?q=api/get_addon_pack" URL requested
+[error, Jul 25 2014 17:19:00] Marketplace [get_addon_pack]: error code (1027): No valid X-Cart license for this module
+[info, Jul 25 2014 17:19:00] Marketplace [get_addon_pack]: the "https://my.x-cart.com/index.php?q=api/get_addon_pack" URL requested
+[info, Jul 25 2014 17:19:02] Module pack ("CDev\RuTranslation") is received: "/home/users1/d/dmitriysmoll/domains/adas-mebel.ru/var/tmp/53d25946400eb.gz"
+[info, Jul 25 2014 17:19:02] Marketplace [get_addon_hash]: the "https://my.x-cart.com/index.php?q=api/get_addon_hash" URL requested
+[info, Jul 25 2014 17:19:03] Marketplace [get_addon_hash]: valid response received
+[info, Jul 25 2014 17:19:03] Marketplace [get_addon_pack]: the "https://my.x-cart.com/index.php?q=api/get_addon_pack" URL requested
+[error, Jul 25 2014 17:19:04] Marketplace [get_addon_pack]: error code (1027): No valid X-Cart license for this module
+[info, Jul 25 2014 17:19:04] Marketplace [get_addon_pack]: the "https://my.x-cart.com/index.php?q=api/get_addon_pack" URL requested
+[info, Jul 25 2014 17:19:05] Module pack ("CDev\SimpleCMS") is received: "/home/users1/d/dmitriysmoll/domains/adas-mebel.ru/var/tmp/53d25949aed5b.gz"
+[info, Jul 25 2014 17:19:05] Marketplace [get_addon_hash]: the "https://my.x-cart.com/index.php?q=api/get_addon_hash" URL requested
+[info, Jul 25 2014 17:19:06] Marketplace [get_addon_hash]: valid response received
+[info, Jul 25 2014 17:19:06] Marketplace [get_addon_pack]: the "https://my.x-cart.com/index.php?q=api/get_addon_pack" URL requested
+[info, Jul 25 2014 17:19:09] Module pack ("CDev\TinyMCE") is received: "/home/users1/d/dmitriysmoll/domains/adas-mebel.ru/var/tmp/53d2594da59ee.gz"
+[info, Jul 25 2014 17:19:09] Marketplace [get_addon_hash]: the "https://my.x-cart.com/index.php?q=api/get_addon_hash" URL requested
+[info, Jul 25 2014 17:19:10] Marketplace [get_addon_hash]: valid response received
+[info, Jul 25 2014 17:19:10] Marketplace [get_addon_pack]: the "https://my.x-cart.com/index.php?q=api/get_addon_pack" URL requested
+[info, Jul 25 2014 17:19:12] Module pack ("XC\UPS") is received: "/home/users1/d/dmitriysmoll/domains/adas-mebel.ru/var/tmp/53d259502b4e4.gz"
+[info, Jul 25 2014 17:19:12] Marketplace [get_addon_hash]: the "https://my.x-cart.com/index.php?q=api/get_addon_hash" URL requested
+[info, Jul 25 2014 17:19:13] Marketplace [get_addon_hash]: valid response received
+[info, Jul 25 2014 17:19:13] Marketplace [get_addon_pack]: the "https://my.x-cart.com/index.php?q=api/get_addon_pack" URL requested
+[error, Jul 25 2014 17:19:14] Marketplace [get_addon_pack]: error code (1027): No valid X-Cart license for this module
+[info, Jul 25 2014 17:19:14] Marketplace [get_addon_pack]: the "https://my.x-cart.com/index.php?q=api/get_addon_pack" URL requested
+[error, Jul 25 2014 17:19:15] Marketplace [get_addon_pack]: error code (1027): No valid X-Cart license for this module
+[info, Jul 25 2014 17:19:15] Marketplace [get_addon_pack]: the "https://my.x-cart.com/index.php?q=api/get_addon_pack" URL requested
+[info, Jul 25 2014 17:19:17] Module pack ("CDev\XMLSitemap") is received: "/home/users1/d/dmitriysmoll/domains/adas-mebel.ru/var/tmp/53d259551f966.gz"
+[info, Jul 25 2014 17:19:17] Marketplace [get_addon_hash]: the "https://my.x-cart.com/index.php?q=api/get_addon_hash" URL requested
+[info, Jul 25 2014 17:19:18] Marketplace [get_addon_hash]: valid response received
+[info, Jul 25 2014 17:19:18] Marketplace [get_addon_pack]: the "https://my.x-cart.com/index.php?q=api/get_addon_pack" URL requested
+[info, Jul 25 2014 17:19:20] Module pack ("CDev\XPaymentsConnector") is received: "/home/users1/d/dmitriysmoll/domains/adas-mebel.ru/var/tmp/53d25958a949a.gz"
+[info, Jul 25 2014 17:19:20] Marketplace [get_addon_hash]: the "https://my.x-cart.com/index.php?q=api/get_addon_hash" URL requested
+[info, Jul 25 2014 17:19:21] Marketplace [get_addon_hash]: valid response received
+[error, Jul 25 2014 17:19:21] не все пакеты обновления были загружены. Это может быть связано с медленным интернет-соединением или проблемами на стороне сервера маркетплейса. Попробуйте повторить попытку снова.
+[info, Jul 28 2014 20:22:51] Marketplace [check_for_updates]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_for_updates"
+[info, Jul 28 2014 20:22:53] Marketplace [check_for_updates]: получен верный ответ
+[info, Jul 28 2014 20:56:40] Marketplace [get_addons]: the "https://my.x-cart.com/index.php?q=api/get_addons" URL requested
+[info, Jul 28 2014 20:56:43] Marketplace [get_addons]: valid response received
+[info, Jul 28 2014 20:56:46] Marketplace [get_cores]: the "https://my.x-cart.com/index.php?q=api/get_cores" URL requested
+[info, Jul 28 2014 20:56:47] Marketplace [get_cores]: valid response received
+[info, Jul 29 2014 22:49:35] Marketplace [check_for_updates]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_for_updates"
+[info, Jul 29 2014 22:49:37] Marketplace [check_for_updates]: получен верный ответ
+[info, Jul 29 2014 22:51:26] Marketplace [get_addons]: the "https://my.x-cart.com/index.php?q=api/get_addons" URL requested
+[info, Jul 29 2014 22:51:29] Marketplace [get_addons]: valid response received
+[info, Jul 29 2014 22:51:32] Marketplace [check_addon_key]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_addon_key"
+[info, Jul 29 2014 22:51:33] Marketplace [check_addon_key]: valid response received
+[info, Jul 30 2014 11:43:32] Marketplace [get_addons]: the "https://my.x-cart.com/index.php?q=api/get_addons" URL requested
+[info, Jul 30 2014 11:43:35] Marketplace [get_addons]: valid response received
+[info, Jul 30 2014 11:43:37] Marketplace [get_cores]: the "https://my.x-cart.com/index.php?q=api/get_cores" URL requested
+[info, Jul 30 2014 11:43:38] Marketplace [get_cores]: valid response received
+[info, Jul 30 2014 23:27:48] Marketplace [check_for_updates]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_for_updates"
+[info, Jul 30 2014 23:27:50] Marketplace [check_for_updates]: получен верный ответ
+[info, Jul 31 2014 01:04:53] Marketplace [check_addon_key]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_addon_key"
+[info, Jul 31 2014 01:04:54] Marketplace [check_addon_key]: valid response received
+[info, Aug 01 2014 11:56:04] Marketplace [check_for_updates]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_for_updates"
+[info, Aug 01 2014 11:56:06] Marketplace [check_for_updates]: получен верный ответ
+[info, Aug 02 2014 21:12:06] Marketplace [check_for_updates]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_for_updates"
+[info, Aug 02 2014 21:12:07] Marketplace [check_for_updates]: получен верный ответ
+[info, Aug 04 2014 10:01:20] Marketplace [check_for_updates]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_for_updates"
+[info, Aug 04 2014 10:01:22] Marketplace [check_for_updates]: получен верный ответ
+[info, Aug 04 2014 22:19:21] Marketplace [get_addons]: the "https://my.x-cart.com/index.php?q=api/get_addons" URL requested
+[info, Aug 04 2014 22:19:26] Marketplace [get_addons]: valid response received
+[info, Aug 04 2014 22:20:57] Marketplace [check_addon_key]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_addon_key"
+[info, Aug 04 2014 22:20:58] Marketplace [check_addon_key]: valid response received
+[info, Aug 04 2014 22:43:50] Marketplace [check_for_updates]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_for_updates"
+[info, Aug 04 2014 22:43:51] Marketplace [check_for_updates]: получен верный ответ
+[info, Aug 04 2014 22:43:51] Marketplace [check_for_updates]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_for_updates"
+[info, Aug 04 2014 22:43:53] Marketplace [check_for_updates]: получен верный ответ
+[info, Aug 04 2014 22:43:53] Marketplace [is_landing_available]: the "https://my.x-cart.com/index.php?q=api/is_landing_available" URL requested
+[info, Aug 04 2014 22:43:54] Marketplace [is_landing_available]: valid response received
+[info, Aug 04 2014 22:43:55] Marketplace [get_all_tags]: the "https://my.x-cart.com/index.php?q=api/get_all_tags" URL requested
+[info, Aug 04 2014 22:43:56] Marketplace [get_all_tags]: valid response received
+[info, Aug 04 2014 22:44:01] Marketplace [check_for_updates]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_for_updates"
+[info, Aug 04 2014 22:44:02] Marketplace [check_for_updates]: получен верный ответ
+[info, Aug 04 2014 22:44:23] Marketplace [check_for_updates]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_for_updates"
+[info, Aug 04 2014 22:44:25] Marketplace [check_for_updates]: получен верный ответ
+[info, Aug 04 2014 22:44:25] Marketplace [check_for_updates]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_for_updates"
+[info, Aug 04 2014 22:44:26] Marketplace [check_for_updates]: получен верный ответ
+[info, Aug 04 2014 22:44:28] Marketplace [check_for_updates]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_for_updates"
+[info, Aug 04 2014 22:44:29] Marketplace [check_for_updates]: получен верный ответ
+[info, Aug 04 2014 22:44:53] Marketplace [get_cores]: the "https://my.x-cart.com/index.php?q=api/get_cores" URL requested
+[info, Aug 04 2014 22:44:54] Marketplace [get_cores]: valid response received
+[info, Aug 05 2014 22:45:14] Marketplace [check_for_updates]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_for_updates"
+[info, Aug 05 2014 22:45:16] Marketplace [check_for_updates]: получен верный ответ
+[info, Aug 07 2014 12:29:15] Marketplace [check_for_updates]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_for_updates"
+[info, Aug 07 2014 12:29:16] Marketplace [check_for_updates]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_for_updates"
+[info, Aug 07 2014 12:29:17] Marketplace [check_for_updates]: получен верный ответ
+[info, Aug 07 2014 12:29:17] Marketplace [check_for_updates]: получен верный ответ
+[info, Aug 08 2014 12:29:28] Marketplace [check_for_updates]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_for_updates"
+[info, Aug 08 2014 12:29:29] Marketplace [check_for_updates]: получен верный ответ
+[info, Aug 09 2014 20:39:51] Marketplace [check_for_updates]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_for_updates"
+[info, Aug 09 2014 20:39:54] Marketplace [check_for_updates]: получен верный ответ
+[info, Aug 10 2014 19:07:32] Marketplace [get_addons]: the "https://my.x-cart.com/index.php?q=api/get_addons" URL requested
+[info, Aug 10 2014 19:07:35] Marketplace [get_addons]: valid response received
+[info, Aug 10 2014 19:07:37] Marketplace [check_addon_key]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_addon_key"
+[info, Aug 10 2014 19:07:38] Marketplace [check_addon_key]: valid response received
+[info, Aug 10 2014 19:15:39] Marketplace [check_for_updates]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_for_updates"
+[info, Aug 10 2014 19:15:41] Marketplace [check_for_updates]: получен верный ответ
+[info, Aug 10 2014 19:15:41] Marketplace [check_for_updates]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_for_updates"
+[info, Aug 10 2014 19:15:43] Marketplace [check_for_updates]: получен верный ответ
+[info, Aug 10 2014 19:15:43] Marketplace [is_landing_available]: the "https://my.x-cart.com/index.php?q=api/is_landing_available" URL requested
+[info, Aug 10 2014 19:15:44] Marketplace [is_landing_available]: valid response received
+[info, Aug 10 2014 19:15:44] Marketplace [get_all_banners]: the "https://my.x-cart.com/index.php?q=api/get_all_banners" URL requested
+[info, Aug 10 2014 19:15:45] Marketplace [get_all_banners]: valid response received
+[info, Aug 10 2014 19:15:45] Marketplace [get_all_tags]: the "https://my.x-cart.com/index.php?q=api/get_all_tags" URL requested
+[info, Aug 10 2014 19:15:45] Marketplace [get_all_tags]: valid response received
+[info, Aug 10 2014 19:15:46] Marketplace [check_for_updates]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_for_updates"
+[info, Aug 10 2014 19:15:47] Marketplace [check_for_updates]: получен верный ответ
+[info, Aug 10 2014 19:16:23] Marketplace [check_for_updates]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_for_updates"
+[info, Aug 10 2014 19:16:24] Marketplace [check_for_updates]: получен верный ответ
+[info, Aug 10 2014 19:16:24] Marketplace [check_for_updates]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_for_updates"
+[info, Aug 10 2014 19:16:25] Marketplace [check_for_updates]: получен верный ответ
+[info, Aug 10 2014 19:16:26] Marketplace [check_for_updates]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_for_updates"
+[info, Aug 10 2014 19:16:27] Marketplace [check_for_updates]: получен верный ответ
+[info, Aug 10 2014 19:17:10] Marketplace [check_for_updates]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_for_updates"
+[info, Aug 10 2014 19:17:12] Marketplace [check_for_updates]: получен верный ответ
+[info, Aug 10 2014 19:17:12] Marketplace [check_for_updates]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_for_updates"
+[info, Aug 10 2014 19:17:13] Marketplace [check_for_updates]: получен верный ответ
+[info, Aug 10 2014 19:17:14] Marketplace [check_for_updates]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_for_updates"
+[info, Aug 10 2014 19:17:15] Marketplace [check_for_updates]: получен верный ответ
+[info, Aug 10 2014 19:18:09] Marketplace [check_for_updates]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_for_updates"
+[info, Aug 10 2014 19:18:10] Marketplace [check_for_updates]: получен верный ответ
+[info, Aug 10 2014 19:18:10] Marketplace [check_for_updates]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_for_updates"
+[info, Aug 10 2014 19:18:11] Marketplace [check_for_updates]: получен верный ответ
+[info, Aug 10 2014 19:18:12] Marketplace [check_for_updates]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_for_updates"
+[info, Aug 10 2014 19:18:13] Marketplace [check_for_updates]: получен верный ответ
+[info, Aug 10 2014 19:18:19] Marketplace [check_for_updates]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_for_updates"
+[info, Aug 10 2014 19:18:21] Marketplace [check_for_updates]: получен верный ответ
+[info, Aug 10 2014 19:18:21] Marketplace [check_for_updates]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_for_updates"
+[info, Aug 10 2014 19:18:22] Marketplace [check_for_updates]: получен верный ответ
+[info, Aug 10 2014 19:18:22] Marketplace [check_for_updates]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_for_updates"
+[info, Aug 10 2014 19:18:24] Marketplace [check_for_updates]: получен верный ответ
+[info, Aug 10 2014 19:18:42] Marketplace [check_for_updates]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_for_updates"
+[info, Aug 10 2014 19:18:43] Marketplace [check_for_updates]: получен верный ответ
+[info, Aug 10 2014 19:18:44] Marketplace [check_for_updates]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_for_updates"
+[info, Aug 10 2014 19:18:45] Marketplace [check_for_updates]: получен верный ответ
+[info, Aug 10 2014 19:18:46] Marketplace [check_for_updates]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_for_updates"
+[info, Aug 10 2014 19:18:47] Marketplace [check_for_updates]: получен верный ответ
+[info, Aug 10 2014 19:19:08] Marketplace [check_for_updates]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_for_updates"
+[info, Aug 10 2014 19:19:09] Marketplace [check_for_updates]: получен верный ответ
+[info, Aug 10 2014 19:19:09] Marketplace [check_for_updates]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_for_updates"
+[info, Aug 10 2014 19:19:11] Marketplace [check_for_updates]: получен верный ответ
+[info, Aug 10 2014 19:19:11] Marketplace [check_for_updates]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_for_updates"
+[info, Aug 10 2014 19:19:12] Marketplace [check_for_updates]: получен верный ответ
+[info, Aug 10 2014 19:19:37] Marketplace [check_for_updates]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_for_updates"
+[info, Aug 10 2014 19:19:38] Marketplace [check_for_updates]: получен верный ответ
+[info, Aug 10 2014 19:19:38] Marketplace [check_for_updates]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_for_updates"
+[info, Aug 10 2014 19:19:40] Marketplace [check_for_updates]: получен верный ответ
+[info, Aug 10 2014 19:19:40] Marketplace [check_for_updates]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_for_updates"
+[info, Aug 10 2014 19:19:42] Marketplace [check_for_updates]: получен верный ответ
+[info, Aug 10 2014 19:19:58] Marketplace [check_for_updates]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_for_updates"
+[info, Aug 10 2014 19:19:59] Marketplace [check_for_updates]: получен верный ответ
+[info, Aug 10 2014 19:19:59] Marketplace [check_for_updates]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_for_updates"
+[info, Aug 10 2014 19:20:00] Marketplace [check_for_updates]: получен верный ответ
+[info, Aug 10 2014 19:20:01] Marketplace [check_for_updates]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_for_updates"
+[info, Aug 10 2014 19:20:02] Marketplace [check_for_updates]: получен верный ответ
+[info, Aug 10 2014 19:20:20] Marketplace [check_for_updates]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_for_updates"
+[info, Aug 10 2014 19:20:28] Marketplace [check_for_updates]: получен верный ответ
+[info, Aug 10 2014 19:20:28] Marketplace [check_for_updates]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_for_updates"
+[info, Aug 10 2014 19:20:29] Marketplace [check_for_updates]: получен верный ответ
+[info, Aug 10 2014 19:20:30] Marketplace [check_for_updates]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_for_updates"
+[info, Aug 10 2014 19:20:31] Marketplace [check_for_updates]: получен верный ответ
+[info, Aug 11 2014 19:56:10] Marketplace [check_for_updates]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_for_updates"
+[info, Aug 11 2014 19:56:11] Marketplace [check_for_updates]: получен верный ответ
+[info, Aug 13 2014 10:45:06] Marketplace [check_for_updates]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_for_updates"
+[info, Aug 13 2014 10:45:08] Marketplace [check_for_updates]: получен верный ответ
+[info, Aug 14 2014 10:54:43] Marketplace [check_for_updates]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_for_updates"
+[info, Aug 14 2014 10:54:44] Marketplace [check_for_updates]: получен верный ответ
+[info, Aug 15 2014 10:55:34] Marketplace [check_for_updates]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_for_updates"
+[info, Aug 15 2014 10:55:36] Marketplace [check_for_updates]: получен верный ответ
+[info, Aug 16 2014 12:57:30] Marketplace [check_for_updates]: запрашиваемый URL "https://my.x-cart.com/index.php?q=api/check_for_updates"
+[info, Aug 16 2014 12:57:32] Marketplace [check_for_updates]: получен верный ответ

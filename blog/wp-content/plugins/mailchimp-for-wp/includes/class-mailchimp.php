@@ -13,19 +13,22 @@ class MC4WP_MailChimp {
 	 *
 	 * @return array
 	 */
-	public function get_lists( $force_renewal = false ) {
+	public function get_lists( $force_renewal = false, $force_fallback = false ) {
 
 		$cached_lists = get_transient( 'mc4wp_mailchimp_lists' );
+
+		// if force_fallback is true, get lists from older transient
+		if( true === $force_fallback ) {
+			$cached_lists = get_transient( 'mc4wp_mailchimp_lists_fallback' );
+		}
 
 		if ( true === $force_renewal || false === $cached_lists || empty( $cached_lists ) ) {
 
 			// make api request for lists
 			$api = mc4wp_get_api();
-			$lists = array();
-
 			$lists_data = $api->get_lists();
 
-			if ( $lists_data ) {
+			if ( is_array( $lists_data ) ) {
 
 				$lists = array();
 
@@ -82,13 +85,11 @@ class MC4WP_MailChimp {
 	 *
 	 * @return bool
 	 */
-	public function get_list( $list_id ) {
-		$lists = $this->get_lists();
+	public function get_list( $list_id, $force_renewal = false, $force_fallback = false ) {
+		$lists = $this->get_lists( $force_renewal, $force_fallback );
 
-		foreach( $lists as $list ) {
-			if( $list->id === $list_id ) {
-				return $list;
-			}
+		if( isset( $lists[$list_id] ) ) {
+			return $lists[$list_id];
 		}
 
 		return false;
@@ -108,6 +109,55 @@ class MC4WP_MailChimp {
 		}
 
 		return '';
+	}
+
+	/**
+	 * Returns number of subscribers on given lists.
+	 *
+	 * @param array $list_ids of list id's.
+	 * @return int Sum of subscribers for given lists.
+	 */
+	public function get_subscriber_count( $list_ids ) {
+
+		// don't count when $list_ids is empty or not an array
+		if( ! is_array( $list_ids ) || count( $list_ids ) === 0 ) {
+			return 0;
+		}
+
+		$list_counts = get_transient( 'mc4wp_list_counts' );
+
+		if ( false === $list_counts ) {
+			// make api call
+			$api = mc4wp_get_api();
+			$lists = $api->get_lists();
+			$list_counts = array();
+
+			if ( is_array( $lists ) ) {
+
+				foreach ( $lists as $list ) {
+					$list_counts["{$list->id}"] = $list->stats->member_count;
+				}
+
+				$transient_lifetime = apply_filters( 'mc4wp_lists_count_cache_time', 1200 ); // 20 mins by default
+
+				set_transient( 'mc4wp_list_counts', $list_counts, $transient_lifetime );
+				set_transient( 'mc4wp_list_counts_fallback', $list_counts, 86400 ); // 1 day
+			} else {
+				// use fallback transient
+				$list_counts = get_transient( 'mc4wp_list_counts_fallback' );
+				if ( false === $list_counts ) {
+					return 0;
+				}
+			}
+		}
+
+		// start calculating subscribers count for all list combined
+		$count = 0;
+		foreach ( $list_ids as $id ) {
+			$count += ( isset( $list_counts[$id] ) ) ? $list_counts[$id] : 0;
+		}
+
+		return apply_filters( 'mc4wp_subscriber_count', $count );
 	}
 
 	/**

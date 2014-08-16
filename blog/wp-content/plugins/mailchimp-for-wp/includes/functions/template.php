@@ -13,6 +13,7 @@ if( ! defined( "MC4WP_LITE_VERSION" ) ) {
 function mc4wp_checkbox() {
 	global $mc4wp;
 
+	// manually instantiate comment form integration class
 	if( ! isset( $mc4wp->get_checkbox_manager()->integrations['comment_form'] ) ) {
 		$mc4wp->get_checkbox_manager()->integrations['comment_form'] = new MC4WP_Comment_Form_Integration();
 	}
@@ -21,9 +22,10 @@ function mc4wp_checkbox() {
 }
 
 /**
-* Echoes sign-up form with given $form_id.
-* @param int $form_id.
-*/
+ * Echoes a MailChimp for WordPress form
+ *
+ * @param   int     $id     The form ID
+ */
 function mc4wp_form( $id = 0 ) {
 	echo mc4wp_get_form( $id );
 }
@@ -31,8 +33,8 @@ function mc4wp_form( $id = 0 ) {
 /**
 * Returns HTML for sign-up form with the given $form_id.
 *
-* @param int $form_id.
-* @return string HTML of given form_id.
+* @param    int     $form_id.
+* @return   string  HTML of given form_id.
 */
 function mc4wp_get_form( $id = 0 ) {
 	global $mc4wp;
@@ -43,9 +45,9 @@ function mc4wp_get_form( $id = 0 ) {
 /**
 * Returns text with {variables} replaced.
 *
-* @param string $text
-* @param array $list_ids Array of list id's
-* @return string $text with {variables} replaced.
+* @param    string  $text
+* @param    array   $list_ids   Array of list id's
+* @return   string  $text       The text with {variables} replaced.
 */
 function mc4wp_replace_variables( $text, $list_ids = array() ) {
 
@@ -58,8 +60,9 @@ function mc4wp_replace_variables( $text, $list_ids = array() ) {
 	$text = str_ireplace( $needles, $replacements, $text );
 
 	// subscriber count? only fetch these if the tag is actually used
-	if ( stristr( $text, '{subscriber_count}' ) != false ) {
-		$subscriber_count = mc4wp_get_subscriber_count( $list_ids );
+	if ( stristr( $text, '{subscriber_count}' ) !== false ) {
+		$mailchimp = new MC4WP_MailChimp();
+		$subscriber_count = $mailchimp->get_subscriber_count( $list_ids );
 		$text = str_ireplace( '{subscriber_count}', $subscriber_count, $text );
 	}
 
@@ -78,67 +81,24 @@ function mc4wp_replace_variables( $text, $list_ids = array() ) {
 }
 
 /**
-* Returns number of subscribers on given lists.
-*
-* @param array $list_ids of list id's.
-* @return int Sum of subscribers for given lists.
-*/
-function mc4wp_get_subscriber_count( $list_ids ) {
-
-	// don't count when $list_ids is empty or not an array
-	if( ! is_array( $list_ids ) || count( $list_ids ) === 0 ) {
-		return 0;
-	}
-
-	$list_counts = get_transient( 'mc4wp_list_counts' );
-
-	if ( false === $list_counts ) {
-		// make api call
-		$api = mc4wp_get_api();
-		$lists = $api->get_lists();
-		$list_counts = array();
-
-		if ( $lists ) {
-
-			foreach ( $lists as $list ) {
-				$list_counts["{$list->id}"] = $list->stats->member_count;
-			}
-
-			$transient_lifetime = apply_filters( 'mc4wp_lists_count_cache_time', 1200 ); // 20 mins by default
-
-			set_transient( 'mc4wp_list_counts', $list_counts, $transient_lifetime );
-			set_transient( 'mc4wp_list_counts_fallback', $list_counts, 86400 ); // 1 day
-		} else {
-			// use fallback transient
-			$list_counts = get_transient( 'mc4wp_list_counts_fallback' );
-			
-			if ( ! $list_counts ) { 
-				return 0; 
-			}
-		}
-	}
-
-	// start calculating subscribers count for all list combined
-	$count = 0;
-	foreach ( $list_ids as $id ) {
-		$count += ( isset( $list_counts[$id] ) ) ? $list_counts[$id] : 0;
-	}
-
-	return apply_filters( 'mc4wp_subscriber_count', $count );
-}
-
-/**
  * Retrieves the URL of the current WordPress page
  *
- * @return string The current URL, escaped for safe usage inside attributes.
+ * @return  string  The current URL, escaped for safe usage inside attributes.
  */
 function mc4wp_get_current_url() {
-	$current_url  = is_ssl() ? 'https://' : 'http://';
-	$current_url .= $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
-	return esc_url( $current_url );
+	global $wp;
+	$url = home_url( $wp->request );
+
+	if( substr( $_SERVER['REQUEST_URI'], -1 ) === '/' ) {
+		$url = trailingslashit( $url );
+	}
+
+	return esc_url( $url );
 }
 
-
+/****************************~***
+ *      Deprecated functions    *
+ ********************************/
 
 /**
 * Echoes a sign-up form.
@@ -147,6 +107,7 @@ function mc4wp_get_current_url() {
 * @see mc4wp_form()
 */
 function mc4wp_show_form( $id = 0 ) {
+	_deprecated_function( __FUNCTION__, 'MailChimp for WP v1.3.1', 'mc4wp_form' );
 	mc4wp_form( $id );
 }
 
@@ -157,5 +118,6 @@ function mc4wp_show_form( $id = 0 ) {
 * @see mc4wp_checkbox()
 */
 function mc4wp_show_checkbox() {
+	_deprecated_function( __FUNCTION__, 'MailChimp for WP v1.3.1', 'mc4wp_form' );
 	mc4wp_checkbox();
 }

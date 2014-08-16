@@ -8,3 +8,11 @@ DIV.product-details-shipping_payment-info UL {list-style-type:disc;}
 DIV.shipping-help-info {clear:both; padding:10px; background:#f6f6f6;}
 DIV.shipping-help-info  SPAN {display:block; font-size:20px; font-weight:bold; padding-bottom:10px;}
 DIV.shipping-help-info  UL LI {padding-bottom:5px;}
+
+.product-details .title {width:300px;}
+
+.phone_header {font-size:32px;font-weight:bold;padding-top:15px;text-align:center;}
+
+.phone_header SPAN {display:block;font-size:12px;font-weight:normal;}
+
+.yandex_bar {margin-top:25px; margin-bottom:-25px;}

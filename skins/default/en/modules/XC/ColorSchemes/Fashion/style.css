@@ -9,24 +9,6 @@
  * @link      http://www.x-cart.com/
  */
 
- /**
-* Header phone number
-*/
-
-.phone_header {
-position:absolute;
-top:5px;
-left:200px;
-font-size:32px;
-font-weight:bold;
-}
-
-.phone_header SPAN {
-display:block;
-font-size:12px;
-font-weight:normal;
-}
-
 #site-slogan, #main-menu, fieldset legend, button.action, button.bright {
   font-weight: 400;
 }

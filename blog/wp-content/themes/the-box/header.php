@@ -29,7 +29,6 @@
 	<?php do_action( 'before' ); ?>
 	<header id="masthead" class="site-header clearfix" role="banner">
 		<div class="site-brand clearfix">
-<a href="/"><img src="http://adas-mebel.ru/var/images/upload/logo_transparent.png"/ alt="Вернуться в магазин" title="Вернуться в магазин"></a>
 			<hgroup>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				<span class="site-description"><?php bloginfo( 'description' ); ?></span>
